@@ -28,7 +28,7 @@ const main = async () => {
     mongoose.connection.on("open", () => console.log("DB CONNECTED"));
 
     // route to open short link
-    app.get("/i/:random_characters", openShortLink);
+    app.get("/:random_characters", openShortLink);
 
     //connection with apolloserver
     const apolloServer = new ApolloServer({
