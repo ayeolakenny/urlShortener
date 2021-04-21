@@ -31,7 +31,7 @@ export class UrlResolver {
     }
 
     //create shorturl
-    const shortUrl = `${baseUrl}/i/${randomCharacter}`;
+    const shortUrl = `${baseUrl}/${randomCharacter}`;
 
     //save new url to db
     const newUrl = new UrlModel({
