@@ -42,6 +42,8 @@ const main = async () => {
         scalarsMap: [{ type: ObjectId, scalar: ObjectIdScalar }],
         validate: false,
       }),
+      introspection: true,
+      playground: true,
     });
 
     apolloServer.applyMiddleware({ app, cors: false });
